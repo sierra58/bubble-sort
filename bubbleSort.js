@@ -7,9 +7,9 @@ const bubbleSort = function(numbers) {
         for (let position = 0; position < length; position++) {
             if (numbers[position] < numbers[position + 1]) {
               // swap
-              const smallerNumber = numbers[position + 1];
+              const largerNumber = numbers[position + 1];
               numbers[position + 1] = numbers[position];
-              numbers[position] = smallerNumber;
+              numbers[position] = largerNumber;
             }
         }
     }
